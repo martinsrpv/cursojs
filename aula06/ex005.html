@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        font: normal 14pt Arial
+    }
+
+</style>
 <body>
     
     <script>
         var nome = window.prompt('Qual é o seu nome?')
-        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br/>`)
-        document.write(`Seu nome em mauículas é ${nome.toUpperCase()}<br/>`)
-        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`) // Sempre que usar place holder, lembrar de estar com as cráses. Podemos colocar também HTML dentro da string
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em mauículas é ${nome.toUpperCase()}.<br/>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.`) // Sempre que usar place holder, lembrar de estar com as cráses. Podemos colocar também HTML dentro da string
         
     </script>
 </body>
